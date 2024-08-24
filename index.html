@@ -29,7 +29,7 @@
             margin: 0 15px;
         }
         main {
-            padding: 50px;
+            padding: 25px;
             text-align: center;
         }
         .product {
@@ -43,14 +43,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .product img {
-            max-width: 100%;
+            max-width: 75%;
             height: auto;
         }
         .product p {
             margin: 10px 0;
             flex-wrap: wrap;
         }
-        footer {
+        footer {    
             background-color: #333;
             color: #fff;
             text-align: center;
@@ -67,6 +67,7 @@
         li {
             padding: 5px 0;
         }
+         /* Responsive Design */
         @media (max-width: 768px) {
             nav ul li {
                 display: block;
@@ -77,6 +78,34 @@
                 flex: 1 1 100%;
             }
         }
+        @media (max-width: 490px) {
+
+            .product{
+                max-width: 40%;
+            }
+
+            .contact-details{
+                font-size:x-small;
+            }
+            
+            .About{
+                font-size: small;
+            }
+        }
+        @media (max-width: 300px){
+            .product{
+                width: 70%;
+            }
+            .product img {
+                max-width: 100%;
+            }
+            main {
+                padding: 0px;
+            }
+
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -145,7 +174,7 @@
         
         <hr>
 
-        <div class="About us" id="about">
+        <div class="About" id="about">
             <h3>Why Shop With Us?</h3>
         <ul>
             <li><strong>Free Shipping:</strong> On all orders above ₹2000.</li>
@@ -154,7 +183,7 @@
         </ul>
 
         
-        <p>At <b>PS Footwear</b>, we believe in providing <strong>quality products</strong> at competitive prices. Explore our collection and find your perfect pair today!</p>
+        <p class="spacial">At <b>PS Footwear</b>, we believe in providing <strong>quality products</strong> at competitive prices. Explore our collection and find your perfect pair today!</p>
         </div>
 
         
